@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../other/swiper/modules/thumbs/thumbs.scss"
+    ],
+    "names": [],
+    "file": "thumbs.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../other/swiper/modules/parallax/parallax.scss"
+    ],
+    "names": [],
+    "file": "parallax.css"
+}

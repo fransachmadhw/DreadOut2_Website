@@ -1,0 +1,794 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200;400;700&family=Nothing+You+Could+Do&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;700&family=Oswald:wght@200;400;500;700&display=swap');
+
+// font-family: 'Mada', sans-serif;
+// font-family: 'Nothing You Could Do', cursive;
+// font-family: 'Shadows Into Light', cursive;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Josefin Sans', sans-serif;
+
+// Variables
+$bg-colour: rgb(8, 8, 8);
+$h2-colour: #c00;
+$text-colour: rgb(216, 216, 216);
+
+
+
+// Navbar
+.navbar {
+    position: relative;
+    width: 75vmax;
+    height: 15vh;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+
+    .navbar-brand {
+        position: absolute;
+
+        img {
+            width: 45px;
+            height: 45px;
+            box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, .2);
+
+            &:hover {
+                filter: brightness(80%);
+            }
+        }
+    }
+
+    #navbarNav {
+        .navbar-nav {
+            .nav-item {
+                a {
+                    color: white;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    transition: .5s all ease;
+                    margin-left: 10px;
+                    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+
+                    &:hover {
+                        color: $h2-colour;
+                        transform: scale(1.1);
+                        text-shadow: 0 0 0px rgba(0, 0, 0, 1);
+                        // text-shadow: 0 0 7px rgba(255, 0, 0, 1);
+                    }
+                }
+                &:hover .dropdown-menu{ display: block; }
+            }
+
+            .dropdown {
+                .dropdown-toggle {
+                    // pointer-events: none;
+                }
+                .dropdown-menu {
+                    display: hidden;
+                    background-color: #c00;
+                    overflow: hidden;
+
+                    li {
+                        a {
+                            margin-left: 0;
+                            text-shadow: 0 0 0px rgba(0, 0, 0, 1);
+                            &:hover {
+                                transform: scale(1);
+                                color: $bg-colour;
+                                // text-shadow: 0 0 0px rgba(255, 0, 0, 0);
+                                background-color: transparent;
+                                // color: white;
+                            }
+                        }
+                    }
+                }
+                
+                &:hover .dropdown-toggle {
+                    color: $h2-colour;
+                    transform: scale(1.1);
+                    text-shadow: 0 0 0px rgba(0, 0, 0, 1);
+                }
+            }
+        }
+    }
+}
+
+body {
+    overflow-x: hidden;
+    background-color: $bg-colour;
+
+    // Hero
+    .hero {
+        width: 100vw;
+        height: 100vh;
+        margin-top: -15vh;
+        position: relative;
+        // background-image: url(../images/hero.jpg);
+        // background-size: cover;
+        // background-position: center;
+
+        .hero_logo {
+            position: absolute;
+            width: 700px;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            filter: drop-shadow(0 0 25px rgba(0, 0, 0, 1));
+        }
+
+        .swiper-hero {
+            width: 100%;
+            height: 100%;
+            .swiper-wrapper {
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+
+                    /* Center slide text vertically */
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                }
+
+                .img1 {
+                    // background-image: url(../images/hero.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(../images/hero_3.webp);
+                }
+
+                .img2 {
+                    // background-image: url(../images/hero_2.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(../images/hero_8.jpeg);
+                }
+
+                .img3 {
+                    // background-image: ;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)), url(../images/hero_4.jpg);
+                }
+
+                .img4 {
+                    // background-image: ;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)), url(../images/hero_7.png);
+                }
+
+                .img5 {
+                    // background-image: ;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)), url(../images/hero_5.webp);
+                }
+
+                .img6 {
+                    // background-image: ;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)), url(../images/linda-dark.jpg);
+                }
+            }
+        }
+
+        // Download
+        .download {
+            z-index: 3;
+            position: absolute;
+            display: flex;
+            // flex-wrap: wrap;
+            flex-direction: column;
+            width: 100vw;
+            height: 25vmin;
+            // background-color: $bg-colour;
+            justify-content: center;
+            align-items: center;
+            bottom: 0;
+            transform: translateX(-50%);
+            left: 50%;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+
+            h2 {
+                text-transform: uppercase;
+                font-family: 'Josefin Sans', sans-serif;
+                color: white;
+                font-size: 36px;
+            }
+
+            .link {
+                a {
+                    margin-left: 15px;
+
+                    &:hover {
+                        filter: brightness(70%);
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Game News
+    #news {
+        margin-top: 50px;
+        height: 100vh;
+
+        .bg {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            // background-image: url(../images/dreadout_2_linda_pc_wallpaper_by_selenjie_ddrs4kk-pre.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: opacity(.15);
+        }
+
+        .container {
+            .news {
+                display: flex;
+                height: 100vh;
+                background-color: $bg-colour;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                position: relative;
+    
+                .desc {
+                    width: 90vw;
+                    margin-top: 0;
+
+                    .col {
+                        overflow: hidden;
+                        width: 70vw;
+                        height: 80vh;
+                        h2 {
+                            font-size: 2.5rem;
+                            color: $h2-colour;
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+
+                        p {
+                            color: $text-colour;
+                            font-size: 1.1rem;
+                            line-height: 2;
+                            // font-family: 'Mada', sans-serif;
+                        }
+
+                        // Swiper News Photos
+                        .swiper-news {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            overflow-x: hidden;
+                            z-index: 2;
+                            // background-color: #c00;
+
+                            .swiper-wrapper {
+                                position: relative;
+                                height: 90%;
+                                .swiper-slide {
+                                    text-align: center;
+                                    font-size: 18px;
+                                    background: #fff;
+                                    height: 90%;
+                                
+                                    /* Center slide text vertically */
+                                    display: -webkit-box;
+                                    display: -ms-flexbox;
+                                    display: -webkit-flex;
+                                    display: flex;
+                                    -webkit-box-pack: center;
+                                    -ms-flex-pack: center;
+                                    -webkit-justify-content: center;
+                                    justify-content: center;
+                                    -webkit-box-align: center;
+                                    -ms-flex-align: center;
+                                    -webkit-align-items: center;
+                                    align-items: center;
+                                    position: relative;
+    
+                                    a {
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+    
+                                    .img {
+                                        position: absolute;
+                                        top: 0;
+                                        height: 50%;
+                                        width: 100%;
+                                    }
+    
+                                    .text {
+                                        position: absolute;
+                                        bottom: 0;
+                                        height: 50%;
+                                        width: 100%;
+                                        background-color: rgb(26, 26, 26);
+                                        text-align: left;
+                                        padding: 20px;
+    
+                                        h2 {
+                                            font-size: 17px;
+                                            font-weight: 700;
+                                            margin-bottom: -5px;
+                                        }
+                                        
+                                        span {
+                                            font-weight: 500;
+                                            font-size: 13px;
+                                            color: rgb(88, 88, 88);
+                                        }
+    
+                                        p {
+                                            margin-top: 20px;
+                                            font-size: 15px;
+                                            // font-weight: 200;
+                                            line-height: 1.4;
+                                        }
+                                    }
+    
+                                    .img1 {
+                                        background-image: url(../images/SS_DO2_updates10.jpg);
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                    }
+    
+                                    .img2 {
+                                        background-image: url(../images/siska-recruitment-thumb.jpg);
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                    }
+    
+                                    .img3 {
+                                        background-image: url(../images/SS_DO2_updates8.jpg);
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                    }
+    
+                                    .img4 {
+                                        background-image: url(../images/nominasi.jpg);
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                    }
+    
+                                    .img5 {
+                                        background-image: url(../images/SS_DO2_updates2-730x410.jpg);
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                    }
+    
+                                    .img6 {
+                                        background-image: url(../images/do2-cover-new-730x410.jpeg);
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                    }
+    
+                                    .img7 {
+                                        background-image: url(../images/Dreadout-2-teaser-trailer-thumb-alt-730x410.jpg);
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                    }
+    
+                                    .line {
+                                        content: '';
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 0%;
+                                        bottom: 0;
+                                        background-color: #c00;
+                                        display: block;
+                                        transition: .5s ease;
+                                    }
+    
+                                    &:hover .line {
+                                        height: 2%;
+                                    }
+                                }
+                            }
+
+                            .swiper-pagination {
+                                position: absolute;
+                                bottom: 10%;
+                                left: 0%;
+                                z-index: 5;
+                            }
+
+                            .swiper-pagination-bullet {
+                                width: 13px;
+                                height: 13px;
+                                text-align: center;
+                                line-height: 20px;
+                                font-size: 12px;
+                                color: transparent;
+                                opacity: 1;
+                                background: rgba(136, 136, 136, 0.2);
+                              }
+                          
+                              .swiper-pagination-bullet-active {
+                                color: transparent;
+                                background: $h2-colour;
+                              }                          
+                        }
+                      
+                          
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
+    // Game About
+
+    #about {
+        height: 100vh;
+
+        .bg {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            background-image: url(../images/dreadout_2_linda_pc_wallpaper_by_selenjie_ddrs4kk-pre.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: opacity(.15);
+        }
+
+        .container {
+            .about {
+                display: flex;
+                height: 100vh;
+                // background-color: $bg-colour;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .desc {
+                    width: 60vw;
+                    margin-top: 0;
+
+                    .col {
+                        h2 {
+                            font-size: 2.5rem;
+                            color: $h2-colour;
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+
+                        p {
+                            color: $text-colour;
+                            font-size: 1.1rem;
+                            line-height: 2;
+                            // font-family: 'Mada', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // Introducing Linda
+
+    #char {
+        height: 100vh;
+
+        .bg {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            background-image: url(../images/thumb-1920-621927.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: opacity(.3);
+        }
+
+        .container {
+            .char {
+                display: flex;
+                height: 100vh;
+                // background-color: $bg-colour;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .desc {
+                    width: 60vw;
+                    margin-top: 0;
+
+                    .col {
+                        h2 {
+                            font-size: 2.5rem;
+                            color: $h2-colour;
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+
+                        p {
+                            color: $text-colour;
+                            font-size: 1.1rem;
+                            line-height: 2;
+                            // font-family: 'Mada', sans-serif;
+                        }
+                    }
+
+                    .linda-a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                    }
+
+                    .linda-b {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    // Swiper Linda Photos
+                    .swiper {
+                      width: 250px;
+                      height: 350px;
+                      border-radius: 10px;
+                    }
+                
+                    .swiper-slide {
+                      text-align: center;
+                      font-size: 18px;
+                      // background: #fff;
+                
+                      /* Center slide text vertically */
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: -webkit-flex;
+                      display: flex;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      -webkit-justify-content: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      -webkit-align-items: center;
+                      align-items: center;
+
+                    
+                    }
+                    .img1 {
+                      background-image: url(../images/Linda_d1.png);
+                      background-position: center;
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                    }
+
+                    .img2 {
+                      background-image: url(../images/Linda_d2.png);
+                      background-position: center;
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // Introducing Ghost
+
+    #ghost {
+        height: 100vh;
+
+        .bg {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            background-image: url(../images/ghost_2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: opacity(.2);
+        }
+
+        .container {
+            .ghost {
+                display: flex;
+                height: 100vh;
+                // background-color: $bg-colour;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .desc {
+                    width: 60vw;
+                    margin-top: 0;
+
+                    .col {
+
+                        h2 {
+                            font-size: 2.5rem;
+                            color: $h2-colour;
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+
+                        p {
+                            color: $text-colour;
+                            font-size: 1.1rem;
+                            line-height: 2;
+                            // font-family: 'Mada', sans-serif;
+                        }
+                    }
+
+                    .ghost-a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        margin-right: 30px;
+                    }
+
+                    .ghost-b {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                    }
+
+                    // Swiper Ghost Photos
+                    .swiper-ghost {
+                      width: 250px;
+                      height: 350px;
+                      border-radius: 10px;
+                    }
+                
+                    .swiper-slide {
+                      text-align: center;
+                      font-size: 18px;
+                      // background: #fff;
+                
+                      /* Center slide text vertically */
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: -webkit-flex;
+                      display: flex;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      -webkit-justify-content: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      -webkit-align-items: center;
+                      align-items: center;
+
+                    
+                    }
+                    .img1 {
+                      background-image: url(../images/ghost1.png);
+                      background-position: center;
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                    }
+
+                    .img2 {
+                        background-image: url(../images/ghost2.png);
+                      background-position: center;
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                    }
+
+                    .img3 {
+                        background-image: url(../images/ghost3.png);
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    .img4 {
+                        background-image: url(../images/ghost4.png);
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    .img5 {
+                        background-image: url(../images/ghost5.png);
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    .img6 {
+                        background-image: url(../images/ghost6.png);
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    .img7 {
+                        background-image: url(../images/ghost7.png);
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // Gameplay with GIFs
+
+    #gameplay {
+        .bg {
+
+        }
+
+        .container {
+            .gameplay {
+                h2 {
+                    margin-top: 100px;
+                    font-size: 2.5rem;
+                    color: $h2-colour;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .col {
+                    text-align: center;
+                    .gif {
+                        width: 450px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
