@@ -75,6 +75,7 @@
 body {
   overflow-x: hidden;
   background-color: #080808;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body .hero {
@@ -121,8 +122,8 @@ body .hero .swiper-hero .swiper-wrapper .img1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)), url(../images/hero_3.webp);
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url(../images/hero_3.webp);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)), url(../images/dreadout-2_5xts.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url(../images/dreadout-2_5xts.jpg);
 }
 
 body .hero .swiper-hero .swiper-wrapper .img2 {
@@ -401,7 +402,7 @@ body #news .container .news .desc .col .swiper-news .swiper-wrapper .swiper-slid
 }
 
 body #news .container .news .desc .col .swiper-news .swiper-wrapper .swiper-slide:hover .line {
-  height: 2%;
+  height: 1.5%;
 }
 
 body #news .container .news .desc .col .swiper-news .swiper-pagination {
@@ -759,8 +760,25 @@ body #gameplay .container .gameplay h2 {
   text-transform: uppercase;
 }
 
+body #gameplay .container .gameplay h3 {
+  color: #9e0000;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+body #gameplay .container .gameplay p {
+  color: #d8d8d8;
+  font-size: 1.3rem;
+}
+
 body #gameplay .container .gameplay .col {
   text-align: center;
+}
+
+body #gameplay .container .gameplay .col p {
+  font-size: 1.1rem;
+  color: #d8d8d8;
+  margin-bottom: 5px;
 }
 
 body #gameplay .container .gameplay .col .gif {
@@ -768,5 +786,6 @@ body #gameplay .container .gameplay .col .gif {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -97,6 +97,7 @@ $text-colour: rgb(216, 216, 216);
 body {
     overflow-x: hidden;
     background-color: $bg-colour;
+    font-family: 'Josefin Sans', sans-serif;
 
     // Hero
     .hero {
@@ -147,7 +148,7 @@ body {
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
-                    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(../images/hero_3.webp);
+                    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(../images/dreadout-2_5xts.jpg);
                 }
 
                 .img2 {
@@ -415,7 +416,7 @@ body {
                                     }
     
                                     &:hover .line {
-                                        height: 2%;
+                                        height: 1.5%;
                                     }
                                 }
                             }
@@ -777,13 +778,33 @@ body {
                     font-weight: 700;
                     text-transform: uppercase;
                 }
+
+                h3 {
+                    color: rgb(158, 0, 0);
+                    font-family: 'Josefin Sans', sans-serif;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    color: $text-colour;
+                    font-size: 1.3rem;
+                }
+
                 .col {
                     text-align: center;
+
+                    p {
+                        font-size: 1.1rem;
+                        color: $text-colour;
+                        margin-bottom: 5px;
+                    }
+
                     .gif {
                         width: 450px;
                         display: block;
                         margin-left: auto;
                         margin-right: auto;
+                        margin-bottom: 50px;
                     }
                 }
             }
