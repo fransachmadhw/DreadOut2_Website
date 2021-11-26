@@ -167,14 +167,6 @@ body {
                     background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)), url(../images/hero_4.jpg);
                 }
 
-                .img4 {
-                    // background-image: ;
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)), url(../images/hero_7.png);
-                }
-
                 .img5 {
                     // background-image: ;
                     background-size: cover;
@@ -771,7 +763,7 @@ body {
         .container {
             .gameplay {
                 h2 {
-                    margin-top: 100px;
+                    margin-top: 70px;
                     font-size: 2.5rem;
                     color: $h2-colour;
                     font-family: 'Josefin Sans', sans-serif;
