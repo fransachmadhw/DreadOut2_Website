@@ -1,31 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Mada:wght@200;400;700&family=Nothing+You+Could+Do&family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;700&family=Oswald:wght@200;400;500;700&display=swap");
-.navbar {
+.backbone {
+  height: 10vmin;
   position: relative;
-  width: 75vmax;
-  height: 15vh;
-  background-color: transparent;
+  background-color: #fff;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 10vmin;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
 }
 
-.navbar .navbar-brand {
-  position: absolute;
+.navbar.nav-fixed {
+  background-color: #080808;
+  position: fixed;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
 }
 
-.navbar .navbar-brand img {
-  width: 45px;
-  height: 45px;
-  -webkit-box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2);
+.navbar.nav-fixed .container-fluid .navbar-nav .nav-item .nav-logo {
+  width: 150px !important;
+  -webkit-filter: contrast(100%) brightness(100%) drop-shadow(0 0 0px black) !important;
+          filter: contrast(100%) brightness(100%) drop-shadow(0 0 0px black) !important;
+  background-image: url(../images/hero_logo.png) !important;
 }
 
-.navbar .navbar-brand img:hover {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
+.navbar .container-fluid #navbarNav .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navbar #navbarNav .navbar-nav .nav-item a {
+.navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-logo {
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  -webkit-filter: contrast(0%) brightness(300%) drop-shadow(0 0 1px black);
+          filter: contrast(0%) brightness(300%) drop-shadow(0 0 1px black);
+  background-image: url(../images/logo-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar .container-fluid #navbarNav .navbar-nav .nav-item a {
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
@@ -36,36 +63,36 @@
   text-shadow: 0 0 5px black;
 }
 
-.navbar #navbarNav .navbar-nav .nav-item a:hover {
+.navbar .container-fluid #navbarNav .navbar-nav .nav-item a:hover {
   color: #c00;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   text-shadow: 0 0 0px black;
 }
 
-.navbar #navbarNav .navbar-nav .nav-item:hover .dropdown-menu {
+.navbar .container-fluid #navbarNav .navbar-nav .nav-item:hover .dropdown-menu {
   display: block;
 }
 
-.navbar #navbarNav .navbar-nav .dropdown .dropdown-menu {
+.navbar .container-fluid #navbarNav .navbar-nav .dropdown .dropdown-menu {
   display: hidden;
   background-color: #c00;
   overflow: hidden;
 }
 
-.navbar #navbarNav .navbar-nav .dropdown .dropdown-menu li a {
+.navbar .container-fluid #navbarNav .navbar-nav .dropdown .dropdown-menu li a {
   margin-left: 0;
   text-shadow: 0 0 0px black;
 }
 
-.navbar #navbarNav .navbar-nav .dropdown .dropdown-menu li a:hover {
+.navbar .container-fluid #navbarNav .navbar-nav .dropdown .dropdown-menu li a:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   color: #080808;
   background-color: transparent;
 }
 
-.navbar #navbarNav .navbar-nav .dropdown:hover .dropdown-toggle {
+.navbar .container-fluid #navbarNav .navbar-nav .dropdown:hover .dropdown-toggle {
   color: #c00;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -81,7 +108,7 @@ body {
 body .hero {
   width: 100vw;
   height: 100vh;
-  margin-top: -15vh;
+  margin-top: -10vmin;
   position: relative;
 }
 

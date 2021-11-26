@@ -19,18 +19,24 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+    <div class="backbone"></div>
+    <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <!-- <a class="navbar-brand" href="#hero">
               <img class="rounded-circle" src="/assets/images/logo.jpg" alt="D2 Logo">
-          </a>
+          </a> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link nav-logo" href="#hero">
+                  <!-- <img class="rounded-circle" src="/assets/images/hero_logo.png" alt="D2 Logo"> -->
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#news">News</a>
@@ -79,7 +85,6 @@
       </div>
         
     </div>
-
 
     <!-- Game News -->
     <section id="news">
@@ -217,8 +222,8 @@
             <div class="col-4 linda-b">
               <div class="swiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide img2"></div>
-                  <div class="swiper-slide img1"></div>
+                  <div class="swiper-slide img2" title="Linda in DreadOut 2"></div>
+                  <div class="swiper-slide img1" title="Linda in DreadOut 1"></div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -243,13 +248,13 @@
               <div class="col-4 ghost-a">
                 <div class="swiper-ghost">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide img1"></div>
-                    <div class="swiper-slide img2"></div>
-                    <div class="swiper-slide img3"></div>
-                    <div class="swiper-slide img4"></div>
-                    <div class="swiper-slide img5"></div>
-                    <div class="swiper-slide img6"></div>
-                    <div class="swiper-slide img7"></div>
+                    <div class="swiper-slide img1" title="Kuntilanak"></div>
+                    <div class="swiper-slide img2" title="New Genderuwo"></div>
+                    <div class="swiper-slide img3" title="Tuyul"></div>
+                    <div class="swiper-slide img4" title="Serpent Blorong"></div>
+                    <div class="swiper-slide img5" title="Gore Surgeon"></div>
+                    <div class="swiper-slide img6" title="Karasukan Victim"></div>
+                    <div class="swiper-slide img7" title="Dreadlings"></div>
                   </div>
                   <!-- Add Pagination -->
                   <div class="swiper-pagination"></div>
@@ -283,30 +288,30 @@
             </div>
             <div class="col">
               <p class="desc">Fight back and survive further with melee weapons.</p>
-              <img src="/assets/other/02_Survive_further.gif" alt="" class="gif">
+              <img src="/assets/other/02_Survive_further.gif" alt="Survive Further" title="Survive Further" class="gif">
             </div>
             <div class="col">
               <p class="desc">Battle hideous bosses that roamed in the supernatural realm.</p>
-              <img src="/assets/other/04_Hideous_Boss.gif" alt="" class="gif">
+              <img src="/assets/other/04_Hideous_Boss.gif" alt="Hideous Boss" title="Hideous Boss" class="gif">
             </div>
 
             <h3>Non linear survival horror</h3>
             <p>Exploration is the heart of DreadOut 2. We want to take another step to enrich our way of non-linear storytelling through different key elements.</p>
             <div class="col">
               <p class="desc">Explore sleepy Lil' town, night and day.</p>
-              <img src="/assets/other/05_explore.gif" alt="" class="gif">
+              <img src="/assets/other/05_explore.gif" alt="Explore" title="Explore" class="gif">
             </div>
             <div class="col">
               <p class="desc">Interact with various unique NPCs both human and ghosts.</p>
-              <img src="/assets/other/06_NPCs.gif" alt="" class="gif">
+              <img src="/assets/other/06_NPCs.gif" alt="Unique NPCs" title="Unique NPCs" class="gif">
             </div>
             <div class="col">
               <p class="desc">Written specifically based on our Indonesian urban legends.</p>
-              <img src="/assets/other/07_Side-quests.gif" alt="" class="gif">
+              <img src="/assets/other/07_Side-quests.gif" alt="Side Quests" title="Side Quests" class="gif">
             </div>
             <div class="col">
               <p class="desc">Experience environmental storytelling.</p>
-              <img src="/assets/other/08_Interactable.gif" alt="" class="gif">
+              <img src="/assets/other/08_Interactable.gif" alt="Environment Interaction" title="Environment Interaction" class="gif">
             </div>
 
         </div>
@@ -326,7 +331,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <script src="/assets/js/progressBar.js"></script>
+    <script src="/assets/js/navbar.js"></script>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
@@ -337,6 +342,7 @@
       {
         loop: true,
         centeredSlides: true,
+        grabCursor: true,
         autoplay: 
         {
           delay: 2500,
@@ -349,6 +355,7 @@
         effect: 'fade',
         loop: false,
         centeredSlides: true,
+        grabCursor: true,
         autoplay: 
         {
           delay: 2500,
