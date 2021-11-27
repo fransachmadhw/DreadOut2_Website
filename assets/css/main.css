@@ -76,7 +76,7 @@
 
 .navbar .container-fluid #navbarNav .navbar-nav .dropdown .dropdown-menu {
   display: hidden;
-  background-color: #c00;
+  background-color: #0e0e0e;
   overflow: hidden;
 }
 
@@ -88,7 +88,7 @@
 .navbar .container-fluid #navbarNav .navbar-nav .dropdown .dropdown-menu li a:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
-  color: #080808;
+  color: #c00;
   background-color: transparent;
 }
 
@@ -110,6 +110,17 @@ body .hero {
   height: 100vh;
   margin-top: -10vmin;
   position: relative;
+}
+
+body .hero video {
+  /*  object-fit is not supported on IE  */
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-filter: brightness(85%);
+  filter: brightness(85%);
+  width: 100%;
+  z-index: 1;
+  position: absolute;
 }
 
 body .hero .hero_logo {
@@ -229,18 +240,24 @@ body .hero .download .link a:hover {
 body #news {
   margin-top: 50px;
   height: 100vh;
+  z-index: 3;
 }
 
 body #news .bg {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: 3;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-filter: opacity(0.15);
           filter: opacity(0.15);
+}
+
+body #news .container {
+  background-color: #c00;
+  width: 100vw;
 }
 
 body #news .container .news {
@@ -259,12 +276,15 @@ body #news .container .news {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
 }
 
 body #news .container .news .desc {
   width: 90vw;
-  margin-top: 0;
+  margin-top: 50px;
 }
 
 body #news .container .news .desc .col {
@@ -553,6 +573,17 @@ body #char .container .char .desc .col p {
   line-height: 2;
 }
 
+body #char .container .char .desc .col a {
+  text-decoration: none;
+  color: #a00000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body #char .container .char .desc .col a:hover {
+  color: #e40000;
+}
+
 body #char .container .char .desc .linda-a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -668,6 +699,17 @@ body #ghost .container .ghost .desc .col p {
   color: #d8d8d8;
   font-size: 1.1rem;
   line-height: 2;
+}
+
+body #ghost .container .ghost .desc .col a {
+  text-decoration: none;
+  color: #a00000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body #ghost .container .ghost .desc .col a:hover {
+  color: #e40000;
 }
 
 body #ghost .container .ghost .desc .ghost-a {

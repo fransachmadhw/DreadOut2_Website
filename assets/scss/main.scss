@@ -96,7 +96,7 @@ $text-colour: rgb(216, 216, 216);
                     }
                     .dropdown-menu {
                         display: hidden;
-                        background-color: #c00;
+                        background-color: rgb(14, 14, 14);
                         overflow: hidden;
     
                         li {
@@ -105,7 +105,7 @@ $text-colour: rgb(216, 216, 216);
                                 text-shadow: 0 0 0px rgba(0, 0, 0, 1);
                                 &:hover {
                                     transform: scale(1);
-                                    color: $bg-colour;
+                                    color: $h2-colour;
                                     // text-shadow: 0 0 0px rgba(255, 0, 0, 0);
                                     background-color: transparent;
                                     // color: white;
@@ -137,6 +137,17 @@ body {
         height: 100vh;
         margin-top: -10vmin;
         position: relative;
+
+        video {
+                /*  object-fit is not supported on IE  */
+            -o-object-fit: cover;
+                object-fit: cover;
+            -webkit-filter: brightness(85%);
+                filter: brightness(85%);
+            width: 100%;
+            z-index: 1;
+            position: absolute;
+        }
 
         .hero_logo {
             position: absolute;
@@ -255,12 +266,13 @@ body {
     #news {
         margin-top: 50px;
         height: 100vh;
+        z-index: 3;
 
         .bg {
             position: absolute;
             width: 100vw;
             height: 100vh;
-            z-index: -1;
+            z-index: 3;
             // background-image: url(../images/dreadout_2_linda_pc_wallpaper_by_selenjie_ddrs4kk-pre.jpg);
             background-position: center;
             background-repeat: no-repeat;
@@ -269,6 +281,8 @@ body {
         }
 
         .container {
+            background-color: #c00;
+            width: 100vw;
             .news {
                 display: flex;
                 height: 100vh;
@@ -276,11 +290,14 @@ body {
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center;
-                position: relative;
+                position: absolute;
+                z-index: 3;
+                left: 0;
+                right: 0;
     
                 .desc {
                     width: 90vw;
-                    margin-top: 0;
+                    margin-top: 50px;
 
                     .col {
                         overflow: hidden;
@@ -574,6 +591,18 @@ body {
                             line-height: 2;
                             // font-family: 'Mada', sans-serif;
                         }
+
+                        a {
+                            text-decoration: none;
+                            color: rgb(160, 0, 0);
+                            // background-color: #fff;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+
+                            &:hover {
+                                color: rgb(228, 0, 0);
+                            }
+                        }
                     }
 
                     .linda-a {
@@ -682,6 +711,18 @@ body {
                             font-size: 1.1rem;
                             line-height: 2;
                             // font-family: 'Mada', sans-serif;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: rgb(160, 0, 0);
+                            // background-color: #fff;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+
+                            &:hover {
+                                color: rgb(228, 0, 0);
+                            }
                         }
                     }
 
