@@ -99,6 +99,29 @@
   text-shadow: 0 0 0px black;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #c00;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
 body {
   overflow-x: hidden;
   background-color: #080808;

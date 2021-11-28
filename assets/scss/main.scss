@@ -126,6 +126,34 @@ $text-colour: rgb(216, 216, 216);
 
 }
 
+// Scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    // background-color: rgb(37, 37, 37);
+    background-color: transparent; 
+    // border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: $h2-colour; 
+    border: 6px solid transparent;
+    background-clip: content-box;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+  }
+
+
+
 body {
     overflow-x: hidden;
     background-color: $bg-colour;
