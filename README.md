@@ -4,7 +4,8 @@
 This is just one of my personal portfolio projects. I developed a remake version of the official DreadOut 2 website. You can see the original [here](http://dreadout2.digitalhappiness.net/). My aim is to improve my imagination, design, creativity, as well as my coding skill. A short introduction, DreadOut 2 is an indie survival horror game developed by an Indonesian Game Company, Digital Happiness. It's a sequel from the previous releases, Dreadout 1 (Act 1 and Act 2) and DreadOut: Keeper of The Dark. And I love DreadOut Games 😄
 
 ## 🎬 Demo and Preview
-The development is still in progress. So, I haven't created it yet 😂
+https://dreadout2unofficial.netlify.app/ <br>
+The development is still in progress. So, you may see the project is still unorganised well 😂
 
 ## 🛠 Built With
 ###### _Core Components_ 
