@@ -135,7 +135,7 @@ $text-colour: rgb(216, 216, 216);
   /* Track */
   ::-webkit-scrollbar-track {
     // background-color: rgb(37, 37, 37);
-    background-color: transparent; 
+    // background-color: transparent; 
     // border-radius: 10px;
   }
    
@@ -897,6 +897,119 @@ body {
                         margin-bottom: 50px;
                     }
                 }
+            }
+        }
+    }
+
+
+
+    // Gallery
+    #gallery {
+        .bg {
+
+        }
+
+        .container {
+            .gallery {
+                h2 {
+                    margin-top: 70px;
+                    font-size: 2.5rem;
+                    color: $h2-colour;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                h3 {
+                    color: rgb(158, 0, 0);
+                    font-family: 'Josefin Sans', sans-serif;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    
+                    &.concept {
+                        margin-top: 50px;
+                    }
+                }
+
+                .wrap {
+                    display: flex;
+                    margin: auto;
+                    // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                    // background-color: #555;
+                    width: 93%;
+                    justify-content: space-evenly;
+                    margin-bottom: 20px;
+
+                    .item {
+                        width: 320px;
+                        height: 220px;
+                        // background-color: #c00;
+                        color: white;
+
+                        .thumb {
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            width: 100%;
+                            height: 80%;
+                            border: 0.5px solid $h2-colour;
+
+
+                            &:hover {
+                                background-size: 120%;
+                                cursor: pointer;
+                            }
+
+                            &.img1 {
+                                background-image: url(../images/D2_backToSchool.jpg);
+                            }
+
+                            &.img2 {
+                                background-image: url(../images/D2_cityExploringAtDay.jpg);
+                            }
+
+                            &.img3 {
+                                background-image: url(../images/D2_cityExploringAtNight.jpg);
+                            }
+
+                            &.img4 {
+                                background-image: url(../images/D2_meetTheKuntilanak.jpg);
+                            }
+
+                            &.img5 {
+                                background-image: url(../images/D2_light.jpg);
+                            }
+
+                            &.img6 {
+                                background-image: url(../images/D2_fight.jpg);
+                            }
+
+                            &.img7 {
+                                background-image: url(../images/D2_enterTheAlley.jpg);
+                            }
+
+                            &.img8 {
+                                background-image: url(../images/D2_conceptBackToSchool.jpg);
+                            }
+
+                            &.img9 {
+                                background-image: url(../images/D2_theNewGenderuwo.jpg);
+                            }
+                        }
+
+                        .caption {
+                            margin-top: 10px;
+                        }
+                    }
+
+                    @media screen and (max-width: 800px) 
+                    {
+                        flex-direction: column;
+                        margin-bottom: 10px;
+                        
+                    }
+                }
+
             }
         }
     }
