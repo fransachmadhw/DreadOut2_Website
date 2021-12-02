@@ -873,6 +873,13 @@ body {
                     color: rgb(158, 0, 0);
                     font-family: 'Josefin Sans', sans-serif;
                     text-transform: uppercase;
+
+                    &.warn {
+                        // font-style: italic;
+                        font-size: smaller;
+                        text-transform: none;
+                        color: #555;
+                    }
                 }
 
                 p {
@@ -895,6 +902,10 @@ body {
                         margin-left: auto;
                         margin-right: auto;
                         margin-bottom: 50px;
+
+                        // &:hover {
+                        //     border: 2px solid red;
+                        // }
                     }
                 }
             }
@@ -945,6 +956,7 @@ body {
                         height: 220px;
                         // background-color: #c00;
                         color: white;
+                        overflow: hidden;
 
                         .thumb {
                             background-size: cover;
@@ -952,12 +964,23 @@ body {
                             background-repeat: no-repeat;
                             width: 100%;
                             height: 80%;
-                            border: 0.5px solid $h2-colour;
-
+                            border: 2px solid $h2-colour;
+                            position: relative;
+                            transition: all .3s;
+                            z-index: 2;
+                            
 
                             &:hover {
-                                background-size: 120%;
+                                transform: scale(1.15);
                                 cursor: pointer;
+                            }
+
+                            .overlay {
+                                width: 100%;
+                                height: 100%;
+                                // background-color: #c00;
+                                position: absolute;
+                                // opacity: 0;
                             }
 
                             &.img1 {
@@ -998,7 +1021,10 @@ body {
                         }
 
                         .caption {
-                            margin-top: 10px;
+                            padding-top: 10px;
+                            background-color: $bg-colour;
+                            position: relative;
+                            z-index: 3;
                         }
                     }
 

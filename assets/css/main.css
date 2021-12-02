@@ -846,6 +846,12 @@ body #gameplay .container .gameplay h3 {
   text-transform: uppercase;
 }
 
+body #gameplay .container .gameplay h3.warn {
+  font-size: smaller;
+  text-transform: none;
+  color: #555;
+}
+
 body #gameplay .container .gameplay p {
   color: #d8d8d8;
   font-size: 1.3rem;
@@ -905,6 +911,7 @@ body #gallery .container .gallery .wrap .item {
   width: 320px;
   height: 220px;
   color: white;
+  overflow: hidden;
 }
 
 body #gallery .container .gallery .wrap .item .thumb {
@@ -913,12 +920,23 @@ body #gallery .container .gallery .wrap .item .thumb {
   background-repeat: no-repeat;
   width: 100%;
   height: 80%;
-  border: 0.5px solid #c00;
+  border: 2px solid #c00;
+  position: relative;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  z-index: 2;
 }
 
 body #gallery .container .gallery .wrap .item .thumb:hover {
-  background-size: 120%;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
   cursor: pointer;
+}
+
+body #gallery .container .gallery .wrap .item .thumb .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 body #gallery .container .gallery .wrap .item .thumb.img1 {
@@ -958,7 +976,10 @@ body #gallery .container .gallery .wrap .item .thumb.img9 {
 }
 
 body #gallery .container .gallery .wrap .item .caption {
-  margin-top: 10px;
+  padding-top: 10px;
+  background-color: #080808;
+  position: relative;
+  z-index: 3;
 }
 
 @media screen and (max-width: 800px) {
