@@ -259,6 +259,7 @@ body .hero .download .link a:hover {
 body #news {
   margin-top: 50px;
   height: 100vh;
+  width: 100vw;
   z-index: 3;
 }
 
@@ -398,6 +399,12 @@ body #news .container .news .desc .col .swiper-news .swiper-wrapper .swiper-slid
   line-height: 1.4;
 }
 
+@media screen and (min-width: 1900px) and (max-width: 2559px) {
+  body #news .container .news .desc .col .swiper-news .swiper-wrapper .swiper-slide .text p {
+    font-size: 1.7rem;
+  }
+}
+
 body #news .container .news .desc .col .swiper-news .swiper-wrapper .swiper-slide .img1 {
   background-image: url(../images/SS_DO2_updates10.jpg);
   background-position: center;
@@ -488,6 +495,7 @@ body #news .container .news .desc .col .swiper-news .swiper-pagination-bullet-ac
 
 body #about {
   height: 100vh;
+  width: 100vw;
 }
 
 body #about .bg {
@@ -539,8 +547,15 @@ body #about .container .about .desc .col p {
   line-height: 2;
 }
 
+@media screen and (min-width: 1900px) and (max-width: 2559px) {
+  body #about .container .about .desc .col p {
+    font-size: 1.7rem;
+  }
+}
+
 body #char {
   height: 100vh;
+  width: 100vw;
 }
 
 body #char .bg {
@@ -603,6 +618,15 @@ body #char .container .char .desc .col a:hover {
   color: #e40000;
 }
 
+@media screen and (min-width: 1900px) and (max-width: 2559px) {
+  body #char .container .char .desc .col p {
+    font-size: 1.7rem;
+  }
+  body #char .container .char .desc .col a {
+    font-size: 1.4rem;
+  }
+}
+
 body #char .container .char .desc .linda-a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,6 +662,13 @@ body #char .container .char .desc .swiper {
   border-radius: 10px;
 }
 
+@media screen and (min-width: 1900px) and (max-width: 2559px) {
+  body #char .container .char .desc .swiper {
+    width: 400px;
+    height: 500px;
+  }
+}
+
 body #char .container .char .desc .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -669,6 +700,7 @@ body #char .container .char .desc .img2 {
 
 body #ghost {
   height: 100vh;
+  width: 100vw;
 }
 
 body #ghost .bg {
@@ -731,6 +763,15 @@ body #ghost .container .ghost .desc .col a:hover {
   color: #e40000;
 }
 
+@media screen and (min-width: 1900px) and (max-width: 2559px) {
+  body #ghost .container .ghost .desc .col p {
+    font-size: 1.7rem;
+  }
+  body #ghost .container .ghost .desc .col a {
+    font-size: 1.4rem;
+  }
+}
+
 body #ghost .container .ghost .desc .ghost-a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -765,6 +806,13 @@ body #ghost .container .ghost .desc .swiper-ghost {
   width: 250px;
   height: 350px;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2559px) {
+  body #ghost .container .ghost .desc .swiper-ghost {
+    width: 400px;
+    height: 500px;
+  }
 }
 
 body #ghost .container .ghost .desc .swiper-slide {
@@ -831,6 +879,10 @@ body #ghost .container .ghost .desc .img7 {
   background-repeat: no-repeat;
 }
 
+body #gameplay {
+  width: 100vw;
+}
+
 body #gameplay .container .gameplay h2 {
   margin-top: 70px;
   font-size: 2.5rem;
@@ -875,6 +927,19 @@ body #gameplay .container .gameplay .col .gif {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1900px) and (max-width: 2559px) {
+  body #gameplay .container .gameplay .col p {
+    font-size: 1.3rem;
+  }
+  body #gameplay .container .gameplay .col .gif {
+    width: 600px;
+  }
+}
+
+body #gallery {
+  width: 100vw;
+}
+
 body #gallery .container .gallery h2 {
   margin-top: 70px;
   font-size: 2.5rem;
@@ -912,6 +977,13 @@ body #gallery .container .gallery .wrap .item {
   height: 220px;
   color: white;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2559px) {
+  body #gallery .container .gallery .wrap .item {
+    width: 350px;
+    height: 250px;
+  }
 }
 
 body #gallery .container .gallery .wrap .item .thumb {
@@ -990,5 +1062,81 @@ body #gallery .container .gallery .wrap .item .caption {
             flex-direction: column;
     margin-bottom: 10px;
   }
+}
+
+body #footer {
+  background-color: black;
+  text-align: center;
+  width: 100vw;
+}
+
+body #footer .container .footer .logo {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+body #footer .container .footer .logo img {
+  width: 130px;
+  height: auto;
+}
+
+body #footer .container .footer .social {
+  margin-bottom: 0px;
+}
+
+body #footer .container .footer .social a {
+  color: #999999;
+  font-size: 40px;
+}
+
+body #footer .container .footer .social a:hover {
+  color: #c00;
+}
+
+body #footer .container .footer .company {
+  margin-bottom: 10px;
+}
+
+body #footer .container .footer .company a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  margin-right: 15px;
+}
+
+body #footer .container .footer .company a:hover {
+  color: #c00;
+}
+
+body #footer .container .footer .privacy {
+  margin-bottom: 10px;
+}
+
+body #footer .container .footer .privacy a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #999999;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+body #footer .container .footer .privacy a:hover {
+  color: #c00;
+}
+
+body #footer .container .footer .copyright {
+  margin-bottom: 35px;
+}
+
+body #footer .container .footer .copyright p {
+  color: white;
+}
+
+body #footer .container .footer .legal {
+  margin-bottom: 35px;
+}
+
+body #footer .container .footer .legal a {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */

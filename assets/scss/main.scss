@@ -294,6 +294,7 @@ body {
     #news {
         margin-top: 50px;
         height: 100vh;
+        width: 100vw;
         z-index: 3;
 
         .bg {
@@ -418,6 +419,11 @@ body {
                                             font-size: 15px;
                                             // font-weight: 200;
                                             line-height: 1.4;
+
+                                            @media screen and (min-width: 1900px) and (max-width: 2559px)
+                                            {
+                                                font-size: 1.7rem;
+                                            }
                                         }
                                     }
     
@@ -525,6 +531,7 @@ body {
 
     #about {
         height: 100vh;
+        width: 100vw;
 
         .bg {
             position: absolute;
@@ -566,6 +573,15 @@ body {
                             line-height: 2;
                             // font-family: 'Mada', sans-serif;
                         }
+                        
+                        @media screen and (min-width: 1900px) and (max-width: 2559px) 
+                        {
+                            h2 {}
+                            
+                            p {
+                                font-size: 1.7rem;
+                            }
+                        }
                     }
                 }
             }
@@ -578,6 +594,7 @@ body {
 
     #char {
         height: 100vh;
+        width: 100vw;
 
         .bg {
             position: absolute;
@@ -631,6 +648,19 @@ body {
                                 color: rgb(228, 0, 0);
                             }
                         }
+
+                        @media screen and (min-width: 1900px) and (max-width: 2559px) 
+                        {
+                            h2 {}
+                            
+                            p {
+                                font-size: 1.7rem;
+                            }
+
+                            a {
+                                font-size: 1.4rem;
+                            }
+                        }
                     }
 
                     .linda-a {
@@ -651,6 +681,12 @@ body {
                       width: 250px;
                       height: 350px;
                       border-radius: 10px;
+
+                      @media screen and (min-width: 1900px) and (max-width: 2559px) 
+                      {
+                            width: 400px;
+                            height: 500px;
+                      }
                     }
                 
                     .swiper-slide {
@@ -698,6 +734,7 @@ body {
 
     #ghost {
         height: 100vh;
+        width: 100vw;
 
         .bg {
             position: absolute;
@@ -752,6 +789,20 @@ body {
                                 color: rgb(228, 0, 0);
                             }
                         }
+
+                        
+                        @media screen and (min-width: 1900px) and (max-width: 2559px) 
+                        {
+                            h2 {}
+                            
+                            p {
+                                font-size: 1.7rem;
+                            }
+
+                            a {
+                                font-size: 1.4rem;
+                            }
+                        }
                     }
 
                     .ghost-a {
@@ -773,6 +824,12 @@ body {
                       width: 250px;
                       height: 350px;
                       border-radius: 10px;
+
+                      @media screen and (min-width: 1900px) and (max-width: 2559px) 
+                      {
+                            width: 400px;
+                            height: 500px;
+                      }
                     }
                 
                     .swiper-slide {
@@ -854,6 +911,7 @@ body {
     // Gameplay with GIFs
 
     #gameplay {
+        width: 100vw;
         .bg {
 
         }
@@ -907,6 +965,17 @@ body {
                         //     border: 2px solid red;
                         // }
                     }
+
+                    @media screen and (min-width: 1900px) and (max-width: 2559px) 
+                    {
+                        p {
+                            font-size: 1.3rem;
+                        }
+
+                        .gif {
+                            width: 600px;
+                        }
+                    }
                 }
             }
         }
@@ -916,6 +985,7 @@ body {
 
     // Gallery
     #gallery {
+        width: 100vw;
         .bg {
 
         }
@@ -957,6 +1027,12 @@ body {
                         // background-color: #c00;
                         color: white;
                         overflow: hidden;
+
+                        @media screen and (min-width: 1900px) and (max-width: 2559px) 
+                        {
+                            width: 350px;
+                            height: 250px;
+                        }
 
                         .thumb {
                             background-size: cover;
@@ -1036,6 +1112,86 @@ body {
                     }
                 }
 
+            }
+        }
+    }
+
+
+
+
+    // Footer
+    #footer {
+        background-color: black;
+        text-align: center;
+        width: 100vw;
+
+        .container {
+            .footer {
+                .logo {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    img {
+                        width: 130px;
+                        height: auto;
+                    }
+                }
+
+                .social {
+                    margin-bottom: 0px;
+                    a {
+                        color: rgb(153, 153, 153);
+                        font-size: 40px;
+
+                        &:hover {
+                            color: $h2-colour;
+                        }
+                    }
+                }
+
+                .company {
+                    margin-bottom: 10px;
+                    a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: white;
+                        margin-right: 15px;
+
+                        &:hover {
+                            color: $h2-colour;
+                        }
+                    }
+                }
+
+                .privacy {
+                    margin-bottom: 10px;
+                    a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: rgb(153, 153, 153);
+                        font-size: smaller;
+                        font-weight: lighter;
+
+                        &:hover {
+                            color: $h2-colour;
+                            // font-weight: bolder;
+                        }
+                    }
+                }
+
+                .copyright {
+                    margin-bottom: 35px;
+                    p {
+                        color: white;
+                    }
+                }
+
+                .legal {
+                    margin-bottom: 35px;
+                    
+                    a {
+                        margin-right: 20px;
+                    }
+                }
             }
         }
     }
