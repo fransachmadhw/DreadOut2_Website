@@ -38,6 +38,12 @@ $text-colour: rgb(216, 216, 216);
                         width: 150px !important;
                         filter: contrast(100%) brightness(100%) drop-shadow(0 0 0px black) !important;
                         background-image: url(../images/hero_logo.png) !important;
+
+                        @media screen and (min-width: 2560px) and (max-width: 3820px)
+                        {
+                            width: 270px !important;
+                            height: 130px;
+                        }
                     }
                 }
             }
@@ -52,7 +58,7 @@ $text-colour: rgb(216, 216, 216);
                 .nav-item {
                     .nav-logo {
                         // overflow: visible;
-                        margin-right: 10px;
+                        margin-right: 20px;
                         // border-radius: 100px;
                         width: 80px;
                         height: 80px;
@@ -61,6 +67,12 @@ $text-colour: rgb(216, 216, 216);
                         background-size: cover;
                         background-position: center;
                         background-repeat: no-repeat;
+
+                        @media screen and (min-width: 2560px) and (max-width: 3820px)
+                        {
+                            width: 160px;
+                            height: 160px;
+                        }
                     }
 
                     a {
@@ -71,6 +83,16 @@ $text-colour: rgb(216, 216, 216);
                         transition: .5s all ease;
                         margin-left: 10px;
                         text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+
+                        @media screen and (min-width: 1900px) and (max-width: 2559px)
+                        {
+                            font-size: 1.7rem;
+                        }
+
+                        @media screen and (min-width: 2560px) and (max-width: 3820px)
+                        {
+                            font-size: 1.9rem;
+                        }
     
                         &:hover {
                             color: $h2-colour;
@@ -167,16 +189,32 @@ body {
             width: 100%;
             z-index: 1;
             position: absolute;
+
+            @media screen and (min-width: 250px) and (max-width: 450px) 
+            {
+                height: 100%;
+            }
         }
 
         .hero_logo {
             position: absolute;
             width: 700px;
+            height: auto;
             transform: translate(-50%, -50%);
             top: 50%;
             left: 50%;
             z-index: 2;
             filter: drop-shadow(0 0 25px rgba(0, 0, 0, 1));
+
+            @media screen and (min-width: 250px) and (max-width: 450px) 
+            {
+                width: 80%;
+            }
+
+            @media screen and (min-width: 2560px) and (max-width: 3820px) 
+            {
+                width: 1000px;
+            }
         }
 
         .swiper-hero {
@@ -278,6 +316,26 @@ body {
                     }
                 }
             }
+
+            @media screen and (min-width: 250px) and (max-width: 450px) 
+            {
+                margin-bottom: 25px;
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                .link {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    a {
+                        img {
+                            height: 36px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -330,6 +388,13 @@ body {
                             font-family: 'Josefin Sans', sans-serif;
                             font-weight: 700;
                             text-transform: uppercase;
+
+                            @media screen and (min-width: 250px) and (max-width: 450px) 
+                            {            
+                                h2 {
+                                    font-size: 24px;
+                                }
+                            }
                         }
 
                         p {
@@ -346,7 +411,6 @@ body {
                             position: relative;
                             overflow-x: hidden;
                             z-index: 2;
-                            // background-color: #c00;
 
                             .swiper-wrapper {
                                 position: relative;
@@ -354,7 +418,6 @@ body {
                                 .swiper-slide {
                                     text-align: center;
                                     font-size: 18px;
-                                    background: #fff;
                                     height: 90%;
                                 
                                     /* Center slide text vertically */
@@ -397,13 +460,34 @@ body {
                                         h2 {
                                             font-size: 17px;
                                             font-weight: 700;
-                                            margin-bottom: -5px;
+                                            margin-bottom: 0px;
+
+                                            @media screen and (min-width: 1900px) and (max-width: 2559px)
+                                            {
+                                                font-size: 1.7rem;
+                                            }
+
+                                            
+                                            @media screen and (min-width: 2560px) and (max-width: 3820px)
+                                            {
+                                                font-size: 2rem;
+                                            }
                                         }
                                         
                                         span {
                                             font-weight: 500;
                                             font-size: 13px;
                                             color: rgb(88, 88, 88);
+
+                                            @media screen and (min-width: 1900px) and (max-width: 2559px)
+                                            {
+                                                font-size: 1.2rem;
+                                            }
+
+                                            @media screen and (min-width: 2560px) and (max-width: 3820px)
+                                            {
+                                                font-size: 1.4rem;
+                                            }
                                         }
     
                                         p {
@@ -413,6 +497,11 @@ body {
                                             line-height: 1.4;
 
                                             @media screen and (min-width: 1900px) and (max-width: 2559px)
+                                            {
+                                                font-size: 1.5rem;
+                                            }
+
+                                            @media screen and (min-width: 2560px) and (max-width: 3820px)
                                             {
                                                 font-size: 1.7rem;
                                             }
@@ -490,6 +579,11 @@ body {
                                 bottom: 10%;
                                 left: 0%;
                                 z-index: 5;
+
+                                @media screen and (min-width: 250px) and (max-width: 450px) 
+                                {
+                                    bottom: 20%;
+                                }
                             }
 
                             .swiper-pagination-bullet {
@@ -509,7 +603,13 @@ body {
                               }                          
                         }
                       
-                          
+                        @media screen and (min-width: 250px) and (max-width: 450px) 
+                        {            
+                            h2 {
+                                font-size: 24px;
+                                text-align: center;
+                            }
+                        }
                     }
 
                 }
@@ -550,6 +650,11 @@ body {
                     width: 60vw;
                     margin-top: 0;
 
+                    @media screen and (min-width: 250px) and (max-width: 450px) 
+                    {            
+                        width: 90vw;
+                    }
+
                     .col {
                         h2 {
                             font-size: 2.5rem;
@@ -565,6 +670,14 @@ body {
                             line-height: 2;
                             // font-family: 'Mada', sans-serif;
                         }
+
+                        @media screen and (min-width: 250px) and (max-width: 450px) 
+                        {            
+                            h2 {
+                                font-size: 24px;
+                                text-align: center;
+                            }
+                        }
                         
                         @media screen and (min-width: 1900px) and (max-width: 2559px) 
                         {
@@ -572,6 +685,17 @@ body {
                             
                             p {
                                 font-size: 1.7rem;
+                            }
+                        }
+
+                        @media screen and (min-width: 2560px) and (max-width: 3820px)
+                        {
+                            h2 {
+                                font-size: 3.2rem;
+                            }
+                            
+                            p {
+                                font-size: 2.3rem;
                             }
                         }
                     }
@@ -613,6 +737,12 @@ body {
                     width: 60vw;
                     margin-top: 0;
 
+                    @media screen and (min-width: 250px) and (max-width: 450px) 
+                    {            
+                        width: 90vw;
+                        flex-direction: column;
+                    }
+
                     .col {
                         h2 {
                             font-size: 2.5rem;
@@ -641,12 +771,33 @@ body {
                             }
                         }
 
+                        @media screen and (min-width: 250px) and (max-width: 450px) 
+                        {            
+                            h2 {
+                                font-size: 24px;
+                                text-align: right;
+                            }
+                        }
+
                         @media screen and (min-width: 1900px) and (max-width: 2559px) 
-                        {
-                            h2 {}
-                            
+                        {                            
                             p {
                                 font-size: 1.7rem;
+                            }
+
+                            a {
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        @media screen and (min-width: 2560px) and (max-width: 3820px)
+                        {
+                            h2 {
+                                font-size: 3.2rem;
+                            }
+                            
+                            p {
+                                font-size: 2.3rem;
                             }
 
                             a {
@@ -665,7 +816,11 @@ body {
                     .linda-b {
                         display: flex;
                         flex-direction: column;
-                        align-items: flex-start;
+
+                        @media screen and (min-width: 250px) and (max-width: 450px) 
+                        {            
+                            width: 100%;
+                        }
                     }
 
                     // Swiper Linda Photos
@@ -677,7 +832,13 @@ body {
                       @media screen and (min-width: 1900px) and (max-width: 2559px) 
                       {
                             width: 400px;
-                            height: 500px;
+                            height: 550px;
+                      }
+
+                      @media screen and (min-width: 2560px) and (max-width: 3820px) 
+                      {
+                            width: 550px;
+                            height: 750px;
                       }
                     }
                 
@@ -753,6 +914,12 @@ body {
                     width: 60vw;
                     margin-top: 0;
 
+                    @media screen and (min-width: 250px) and (max-width: 450px) 
+                    {            
+                        width: 90vw;
+                        flex-direction: column-reverse;
+                    }
+
                     .col {
 
                         h2 {
@@ -782,13 +949,33 @@ body {
                             }
                         }
 
+                        @media screen and (min-width: 250px) and (max-width: 450px) 
+                        {            
+                            h2 {
+                                font-size: 24px;
+                            }
+                        }
+
                         
                         @media screen and (min-width: 1900px) and (max-width: 2559px) 
-                        {
-                            h2 {}
-                            
+                        {                            
                             p {
                                 font-size: 1.7rem;
+                            }
+
+                            a {
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        @media screen and (min-width: 2560px) and (max-width: 3820px)
+                        {
+                            h2 {
+                                font-size: 3.2rem;
+                            }
+                            
+                            p {
+                                font-size: 2.3rem;
                             }
 
                             a {
@@ -802,6 +989,13 @@ body {
                         flex-direction: column;
                         align-items: flex-end;
                         margin-right: 30px;
+
+                        @media screen and (min-width: 250px) and (max-width: 450px) 
+                        {            
+                            width: 100%;
+                            align-items: center;
+                            // background-color: #c00;
+                        }
                     }
 
                     .ghost-b {
@@ -820,7 +1014,13 @@ body {
                       @media screen and (min-width: 1900px) and (max-width: 2559px) 
                       {
                             width: 400px;
-                            height: 500px;
+                            height: 550px;
+                      }
+
+                      @media screen and (min-width: 2560px) and (max-width: 3820px) 
+                      {
+                            width: 550px;
+                            height: 750px;
                       }
                     }
                 
@@ -904,12 +1104,16 @@ body {
 
     #gameplay {
         width: 100vw;
-        .bg {
-
-        }
 
         .container {
             .gameplay {
+
+                @media screen and (min-width: 250px) and (max-width: 450px) 
+                {            
+                    width: 90vw;
+                    margin: auto;
+                }
+
                 h2 {
                     margin-top: 70px;
                     font-size: 2.5rem;
@@ -917,6 +1121,12 @@ body {
                     font-family: 'Josefin Sans', sans-serif;
                     font-weight: 700;
                     text-transform: uppercase;
+
+                    @media screen and (min-width: 250px) and (max-width: 450px) 
+                    {            
+                        font-size: 24px;
+                        text-align: center;
+                    }
                 }
 
                 h3 {
@@ -929,12 +1139,44 @@ body {
                         font-size: smaller;
                         text-transform: none;
                         color: #555;
+
+                        @media screen and (min-width: 250px) and (max-width: 450px) 
+                        {            
+                            margin-bottom: 25px;
+                        }
+                    }
+
+                    @media screen and (min-width: 250px) and (max-width: 450px) 
+                    {            
+                        font-size: 17px;
+                        text-align: center;
                     }
                 }
 
                 p {
                     color: $text-colour;
                     font-size: 1.3rem;
+
+                    @media screen and (min-width: 250px) and (max-width: 450px) 
+                    {            
+                        font-size: 17px;
+                        text-align: center;
+                    }
+                }
+
+                @media screen and (min-width: 2560px) and (max-width: 3820px)
+                {
+                    h2 {
+                        font-size: 3.2rem;
+                    }
+                    
+                    p {
+                        font-size: 1.7rem;
+                    }
+
+                    a {
+                        font-size: 1.4rem;
+                    }
                 }
 
                 .col {
@@ -958,8 +1200,33 @@ body {
                         // }
                     }
 
+                    @media screen and (min-width: 250px) and (max-width: 450px) 
+                    {            
+                        p {
+                            font-size: 17px;
+                        }
+
+                        .gif {
+                            width: 83vw;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+
                     @media screen and (min-width: 1900px) and (max-width: 2559px) 
                     {
+                        p {
+                            font-size: 1.3rem;
+                        }
+
+                        .gif {
+                            width: 600px;
+                        }
+                    }
+
+                    @media screen and (min-width: 2560px) and (max-width: 3820px)
+                    {                        
                         p {
                             font-size: 1.3rem;
                         }
@@ -978,12 +1245,14 @@ body {
     // Gallery
     #gallery {
         width: 100vw;
-        .bg {
-
-        }
 
         .container {
             .gallery {
+                @media screen and (min-width: 250px) and (max-width: 450px) 
+                {            
+                    width: 90vw;
+                    margin: auto;
+                }
                 h2 {
                     margin-top: 70px;
                     font-size: 2.5rem;
@@ -991,6 +1260,12 @@ body {
                     font-family: 'Josefin Sans', sans-serif;
                     font-weight: 700;
                     text-transform: uppercase;
+
+                    @media screen and (min-width: 250px) and (max-width: 450px) 
+                    {            
+                        font-size: 24px;
+                        text-align: center;
+                    }
                 }
 
                 h3 {
@@ -1001,6 +1276,19 @@ body {
                     
                     &.concept {
                         margin-top: 50px;
+                    }
+
+                    @media screen and (min-width: 250px) and (max-width: 450px) 
+                    {            
+                        font-size: 17px;
+                        text-align: center;
+                    }
+                }
+
+                @media screen and (min-width: 2560px) and (max-width: 3820px)
+                {
+                    h2 {
+                        font-size: 3.2rem;
                     }
                 }
 
@@ -1020,10 +1308,25 @@ body {
                         color: white;
                         overflow: hidden;
 
+                        @media screen and (min-width: 250px) and (max-width: 450px) 
+                        {            
+                            width: 100%;
+                            height: 200px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            display: block;
+                        }
+
                         @media screen and (min-width: 1900px) and (max-width: 2559px) 
                         {
                             width: 350px;
                             height: 250px;
+                        }
+
+                        @media screen and (min-width: 2560px) and (max-width: 3820px) 
+                        {
+                            width: 370px;
+                            height: 270px;
                         }
 
                         .thumb {
@@ -1100,7 +1403,6 @@ body {
                     {
                         flex-direction: column;
                         margin-bottom: 10px;
-                        
                     }
                 }
 
@@ -1119,6 +1421,11 @@ body {
 
         .container {
             .footer {
+                @media screen and (min-width: 250px) and (max-width: 450px) 
+                {            
+                    width: 90vw;
+                    margin: auto;
+                }
                 .logo {
                     margin-top: 10px;
                     margin-bottom: 20px;

@@ -27,6 +27,16 @@ var swiper = new Swiper('.swiper',
       {
         slidesPerView: 3,
         spaceBetween: 30,
+        breakpoints: {
+          250: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          720: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          }
+        },
         mousewheel: true,
         autoplay: 
         {
