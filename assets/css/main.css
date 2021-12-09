@@ -625,7 +625,7 @@ body .hero .download .link a:hover {
 
 @media screen and (min-width: 250px) and (max-width: 450px) {
   body .hero .download {
-    margin-bottom: 60px;
+    margin-bottom: 120px;
   }
   body .hero .download h2 {
     font-size: 24px;
