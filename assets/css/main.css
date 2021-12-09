@@ -394,6 +394,7 @@
     margin-right: 30px;
   }
   .menu ul {
+    background: rgba(0, 0, 0, 0.9);
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -410,7 +411,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    z-index: 1;
     -webkit-backdrop-filter: blur(15px);
             backdrop-filter: blur(15px);
     -webkit-transform: translateY(-100%);
@@ -423,6 +423,9 @@
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+  .menu ul li {
+    z-index: 7;
   }
   .menu ul li a {
     display: -webkit-box;
