@@ -60,10 +60,6 @@ var swiper = new Swiper('.swiper',
         effect: 'fade',
         speed: 500,
         loop: true,
-        // pagination: {
-        //   el: '.swiper-pagination',
-        //   type: 'fraction',
-        // },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
