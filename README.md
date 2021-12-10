@@ -17,6 +17,7 @@ The development is still in progress. So, you may see the project is still unorg
 - [Bootstrap 5](https://getbootstrap.com/) - A free and open-source CSS framework.
 - [Swiper](https://swiperjs.com/) - The Most Modern Mobile Touch Slider. 
 - [Lightbox](https://lokeshdhakar.com/projects/lightbox2/) - A small JS library for images.
+- [FreezeFrame](https://github.com/ctrl-freaks/freezeframe.js/) - A library that pauses and triggers animated GIFs 
 
 ## 💡 Acknowledgements 
 Some design and layout references that I referred to. Also, I write and got the DreadOut 2 images from these sites. 
@@ -30,8 +31,8 @@ Some design and layout references that I referred to. Also, I write and got the 
 
 ## 📞 Contact Me
 [<img align="left" alt="codeSTACKr | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />](https://www.youtube.com/c/FransGamingLow/)
-[<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />](#)
-[<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />](#)
+[<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />](https://www.twitter.com/fransachmadhw/)
+[<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />](https://www.linkedin.com/in/frans-ahw/)
 [<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />](https://www.instagram.com/fransachmadhw/)
 </br>
 
