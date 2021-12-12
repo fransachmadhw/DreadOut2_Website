@@ -749,19 +749,21 @@ body #news .container .news .desc .col .swiper-news .swiper-wrapper .swiper-slid
 }
 
 body #news .container .news .desc .col .swiper-news .swiper-wrapper .swiper-slide .text p {
-  margin-top: 20px;
+  margin-top: 0px;
   font-size: 15px;
   line-height: 1.4;
 }
 
 @media screen and (min-width: 1900px) and (max-width: 2559px) {
   body #news .container .news .desc .col .swiper-news .swiper-wrapper .swiper-slide .text p {
+    margin-top: 20px;
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 2560px) and (max-width: 3820px) {
   body #news .container .news .desc .col .swiper-news .swiper-wrapper .swiper-slide .text p {
+    margin-top: 20px;
     font-size: 1.7rem;
   }
 }
