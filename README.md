@@ -6,6 +6,10 @@ This is just one of my personal portfolio projects. I developed a remake version
 ## 🎬 Demo and Preview
 https://dreadout2unofficial.netlify.app/ 
 
+https://user-images.githubusercontent.com/74099030/145755270-06adb7e9-50b1-41f3-ba56-c87798751b03.mp4
+
+
+
 ## 🛠 Built With
 ###### _Core Components_ 
 - [HTML](https://www.w3schools.com/html/) - The standard markup language for Web pages.
